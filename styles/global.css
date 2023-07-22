@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html
+{
+  font-size: 22px;
+}
+
+.my-shadow
+{
+  box-shadow: 0 .3rem .5rem 0px #d9dbda;
+}
+
+.custom-container
+{
+  width: 1920px;
+  max-width: 100%;
+  margin: 0 auto;
+}
