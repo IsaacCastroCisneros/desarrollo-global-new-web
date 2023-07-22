@@ -2,7 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import HeroLink from './components/HeroLink';
 
-export default function Hero() {
+export default function Hero() 
+{
   return (
     <div>
       <article className="flex pt-[calc(70.88px_+_5rem)] w-[60rem] max-w-[100%] mx-auto px-[1rem] hero:pb-[3rem] hero:pt-[6rem]">
@@ -27,7 +28,7 @@ export default function Hero() {
             width={663}
             className="mx-auto"
             height={744}
-            alt="Desarrollo Global - hombre sosteniendo laptop"
+            alt="hombre sosteniendo laptop"
           />
         </section>
       </article>
