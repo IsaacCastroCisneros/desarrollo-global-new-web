@@ -15,9 +15,9 @@ export default function Navbar()
   const[show,setShow]=useState<boolean>(false)
 
   return (
-    <header className="block fixed top-0 left-0 w-[100%] my-shadow navbar1:py-[.5rem]">
+    <header className="block fixed top-0 left-0 w-[100%] my-shadow navbar1:py-[.5rem] z-[99] bg-[#fff]">
       <MobMenu show={show} setShow={setShow} />
-      <nav className="custom-container flex px-[1rem] items-center justify-between">
+      <nav className="custom-container flex items-center justify-between">
         <div className="flex items-center gap-[.5rem] mr-[2rem]">
           <Link href="/">
             <Image

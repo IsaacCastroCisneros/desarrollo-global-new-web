@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import Hero from "./components/Hero/Hero"
+import Stripe from "./components/Stripe/Stripe"
 
 export const metadata:Metadata = {
   title: 'Centro de Capacitación y Desarrollo Global',
@@ -8,5 +10,10 @@ export const metadata:Metadata = {
 
 export default function Home() 
 {
-  return null
+  return (
+    <>
+      <Hero/>
+      <Stripe/>
+    </>
+  )
 }

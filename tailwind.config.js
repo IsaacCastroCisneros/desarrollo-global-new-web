@@ -14,12 +14,15 @@ module.exports = {
       },
       colors:
       {
-        primary:"#0E2FAA"
+        primary:"#0E2FAA",
+        myGreen:"#1DD8FF",
       },
       screens:
       {
         'navbar':{'max':'1385px'},
         'navbar1':{'max':'763px'},
+        'hero':{'max':'1277px'},
+        'hero1':{'max':'716px'},
       }
     },
   },

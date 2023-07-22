@@ -2,27 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-span,
-button {
-  font-family: 'Montserrat', sans-serif;
-}
 
 html
 {
@@ -39,4 +18,20 @@ html
   width: 1920px;
   max-width: 100%;
   margin: 0 auto;
+  padding-left:1rem;
+  padding-right:1rem;
 }
+
+.my-padding
+{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+/* @media only screen and (max-width:450px) 
+{
+  html
+  {
+    font-size: 18px;
+  }
+} */
