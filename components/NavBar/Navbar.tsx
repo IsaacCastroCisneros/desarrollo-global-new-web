@@ -40,11 +40,11 @@ export default function Navbar()
             <Item key={pos} href={item.href} label={item.label} />
           ))}
         </ul>
-        <Button name='ingresar al aula virtual' className="ml-auto navbar1:hidden">ingreso aula virtual</Button>
+        <Button /* name='ingresar al aula virtual' */ className="ml-auto navbar1:hidden">ingreso aula virtual</Button>
         <button
           className="navbar:block hidden ml-[1rem]"
           onClick={() => setShow(!show)}
-          name='abrir menu responsive para celular'
+        /*   name='abrir menu responsive para celular' */
         >
           <FontAwesomeIcon size="xl" icon={faBars} />
           fdfd
