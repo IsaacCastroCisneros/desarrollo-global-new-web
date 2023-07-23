@@ -44,7 +44,7 @@ export default function Navbar()
         <button
           className="navbar:block hidden ml-[1rem]"
           onClick={() => setShow(!show)}
-          name='abrir menu'
+          name='abrir menu responsive para celular'
         >
           <FontAwesomeIcon size="xl" icon={faBars} />
         </button>
