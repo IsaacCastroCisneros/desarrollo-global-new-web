@@ -50,9 +50,9 @@ export default function MobMenu({show,setShow}:props)
             width={220}
             alt="Desarrollo Global"
           />
-          <button onClick={() => setShow(false)} name="cerrar menu">
+          {/* <button onClick={() => setShow(false)} name="cerrar menu">
             <FontAwesomeIcon icon={faXmark} />
-          </button>
+          </button> */}
         </div>
         <ul>
           {items.map((item, pos) => (
