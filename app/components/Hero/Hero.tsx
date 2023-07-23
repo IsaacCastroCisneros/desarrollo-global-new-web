@@ -5,7 +5,7 @@ import HeroLink from './components/HeroLink';
 export default function Hero() 
 {
   return (
-    <div>
+    <div className='bg-slate-200'>
       <article className="flex pt-[calc(70.88px_+_5rem)] w-[60rem] max-w-[100%] mx-auto px-[1rem] hero:pb-[3rem] hero:pt-[6rem]">
         <section className="flex-1 hero:text-center">
           <h1 className="text-primary font-bold text-[60px] leading-[2.7rem] mb-[1rem] hero:text-[33px] hero:leading-[2rem]">
