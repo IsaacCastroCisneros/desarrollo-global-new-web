@@ -16,6 +16,7 @@ module.exports = {
       {
         primary:"#0E2FAA",
         myGreen:"#1DD8FF",
+        myGreen2:"#005A70",
       },
       screens:
       {

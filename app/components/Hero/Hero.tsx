@@ -5,11 +5,11 @@ import HeroLink from './components/HeroLink';
 export default function Hero() 
 {
   return (
-    <div className='bg-slate-200'>
+    <div className='bg-[#faf8f7]'>
       <article className="flex pt-[calc(70.88px_+_5rem)] w-[60rem] max-w-[100%] mx-auto px-[1rem] hero:pb-[3rem] hero:pt-[6rem]">
         <section className="flex-1 hero:text-center">
           <h1 className="text-primary font-bold text-[60px] leading-[2.7rem] mb-[1rem] hero:text-[33px] hero:leading-[2rem]">
-            Obtén la <span className="text-myGreen">Certificación</span> que
+            Obtén la <span className="text-myGreen2">Certificación</span> que
             necesitas para trabajar en el estado
           </h1>
           <p className='text-[28px] mb-[1.2rem] hero1:text-[20px]'>
