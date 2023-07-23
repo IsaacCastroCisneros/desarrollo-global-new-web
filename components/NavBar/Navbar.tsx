@@ -41,13 +41,13 @@ export default function Navbar()
           ))}
         </ul>
         <Button name='ingresar al aula virtual' className="ml-auto navbar1:hidden">ingreso aula virtual</Button>
-       {/*  <button
+        <button
           className="navbar:block hidden ml-[1rem]"
           onClick={() => setShow(!show)}
           name='abrir menu'
         >
           <FontAwesomeIcon size="xl" icon={faBars} />
-        </button> */}
+        </button>
       </nav>
     </header>
   );
