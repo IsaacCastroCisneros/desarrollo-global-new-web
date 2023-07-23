@@ -43,24 +43,21 @@ export default function MobMenu({show,setShow}:props)
           show ? "translate-x-[0]" : "translate-x-[-100%]"
         } duration-200 ease-in-out`}
       >
-        <div className='flex items-center justify-between mb-[1rem]'>
+        <div className="flex items-center justify-between mb-[1rem]">
           <Image
             src="/img/DG-Logotipo.webp"
             height={54}
             width={220}
             alt="Desarrollo Global"
           />
-         {/*  <button onClick={()=>setShow(false)}>
-          <FontAwesomeIcon icon={faXmark} />
-          </button> */}
+          <button onClick={() => setShow(false)} name="cerrar menu">
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
         </div>
         <ul>
-          {
-            items.map((item,pos)=>
-              (
-                <Item key={pos} {...item} />
-              ))
-          }
+          {items.map((item, pos) => (
+            <Item key={pos} {...item} />
+          ))}
         </ul>
       </div>
     </>

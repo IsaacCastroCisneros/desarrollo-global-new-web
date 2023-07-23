@@ -8,7 +8,7 @@ interface props extends ButtonHTMLAttributes<HTMLButtonElement>
 
 export default function Button({children,className,...props}:props) 
 {
-  /* const classNameTw = twMerge('capitalize bg-primary text-[#fff] text-[18px] px-[2rem] py-[.6rem] rounded-[.5rem]',className)
+  const classNameTw = twMerge('capitalize bg-primary text-[#fff] text-[18px] px-[2rem] py-[.6rem] rounded-[.5rem]',className)
 
   return (
     <button
@@ -19,6 +19,5 @@ export default function Button({children,className,...props}:props)
             children
         }
     </button>
-  ) */
-  return null
+  )
 }
