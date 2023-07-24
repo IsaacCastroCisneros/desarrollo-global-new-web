@@ -31,6 +31,7 @@ module.exports = {
         'navbar1':{'max':'763px'},
         'hero':{'max':'1277px'},
         'hero1':{'max':'716px'},
+        '1000px':{'max':'1000px'},
         '700px':{'max':'700px'},
         'heroInhouse':{'max':'1305px'},
       }

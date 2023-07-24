@@ -34,7 +34,7 @@ export default function ListaDeProximos()
       subtitle={`"¡Mantente al tanto de nuestros próximos inicios y no te pierdas la oportunidad de formarte con los mejores!"`}
     >
       <MenuBar/>
-      <Slider {...settings} className='max-w-[100%] w-[75rem] mx-auto' >
+      <Slider {...settings}>
         <Card/>
         <Card/>
         <Card/>
