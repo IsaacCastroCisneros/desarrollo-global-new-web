@@ -1,3 +1,4 @@
+import buttonLink from '@/styles/buttonLink'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React,{ButtonHTMLAttributes,ReactNode} from 'react'
@@ -11,7 +12,7 @@ interface props extends ButtonHTMLAttributes<HTMLButtonElement>
 
 export default function Button({children,className,icon,...props}:props) 
 {
-  const classNameTw = twMerge('capitalize bg-primary text-[#fff] text-[18px] px-[2rem] py-[.6rem] rounded-[.5rem] gap-[.5rem] flex items-center justify-center',className)
+  const classNameTw = twMerge(buttonLink,className)
 
   return (
     <button

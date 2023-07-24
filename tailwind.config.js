@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './styles/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -21,6 +22,8 @@ module.exports = {
         myBlue:"#0042A3",
         myYellow:"#FFE001",
         myRed:"#AA0F03",
+        myOrange:"#E86B2A",
+        border:"#919191",
       },
       screens:
       {
@@ -28,7 +31,8 @@ module.exports = {
         'navbar1':{'max':'763px'},
         'hero':{'max':'1277px'},
         'hero1':{'max':'716px'},
-        '700px':{'max':'700px'}
+        '700px':{'max':'700px'},
+        'heroInhouse':{'max':'1305px'},
       }
     },
   },

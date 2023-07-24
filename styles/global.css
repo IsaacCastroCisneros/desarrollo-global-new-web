@@ -28,12 +28,19 @@ html
   padding-right:1rem;
 }
 
-
-
-/* @media only screen and (max-width:450px) 
+@media only screen and (max-width:700px) 
 {
-  html
+  h1
   {
-    font-size: 18px;
+    font-size: 25px !important;
+    line-height: 1.6rem !important;
   }
-} */
+  p
+  {
+    font-size: 16px !important;
+  }
+  .hero-uppertitle
+  {
+    font-size: 25px !important;
+  }
+}
