@@ -11,6 +11,7 @@ export default function page() {
       <StripeInHouse/>
       <CatalogoDeProgramas/>
       <PorQueElegirUnCursoInhouse/>
+      <DescubraComoPodemosAyudarle/>
     </>
   )
 }
