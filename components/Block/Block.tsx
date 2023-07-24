@@ -13,7 +13,7 @@ export default function Block({children,title,subtitle}:props)
     <div>
       <article className="py-[4rem] my-padding">
         <h2 className='text-primary font-bold text-[45px] block text-center mb-[1rem] capitalize' >{title}</h2>
-        <p className='text-[22px] block text-center capitalize'>{subtitle}</p>
+        <p className='text-[22px] block text-center capitalize max-w-[1000px] mx-auto'>{subtitle}</p>
         {children}
       </article>
     </div>

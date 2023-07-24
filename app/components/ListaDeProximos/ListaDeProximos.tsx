@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import Block from './components/Block'
+import Block from '@/components/Block/Block'
 import Card from '@/components/Card/Card';
 import MenuBar from './components/MenuBar/MenuBar';
 import Slider from "react-slick";
