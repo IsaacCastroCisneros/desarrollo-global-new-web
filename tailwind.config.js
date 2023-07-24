@@ -17,6 +17,9 @@ module.exports = {
         primary:"#0E2FAA",
         myGreen:"#1DD8FF",
         myGreen2:"#005A70",
+        bg:"#F3F6FF",
+        myBlue:"#428DFF",
+        myYellow:"#FFE001",
       },
       screens:
       {
@@ -24,6 +27,7 @@ module.exports = {
         'navbar1':{'max':'763px'},
         'hero':{'max':'1277px'},
         'hero1':{'max':'716px'},
+        '700px':{'max':'700px'}
       }
     },
   },

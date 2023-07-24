@@ -1,6 +1,8 @@
 import { Metadata } from "next"
 import Hero from "./components/Hero/Hero"
 import Stripe from "./components/Stripe/Stripe"
+import ListaDeProximos from "./components/ListaDeProximos/ListaDeProximos"
+import SomosTuMeJorOpcion from "./components/SomosTuMeJorOpcion/SomosTuMeJorOpcion"
 
 export const metadata:Metadata = {
   title: 'Centro de Capacitación y Desarrollo Global',
@@ -14,6 +16,8 @@ export default function Home()
     <>
       <Hero/>
       <Stripe/>
+      <ListaDeProximos/>
+      <SomosTuMeJorOpcion/>
     </>
   )
 }
