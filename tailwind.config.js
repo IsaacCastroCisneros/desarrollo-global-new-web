@@ -18,8 +18,9 @@ module.exports = {
         myGreen:"#1DD8FF",
         myGreen2:"#005A70",
         bg:"#F3F6FF",
-        myBlue:"#428DFF",
+        myBlue:"#0042A3",
         myYellow:"#FFE001",
+        myRed:"#AA0F03",
       },
       screens:
       {

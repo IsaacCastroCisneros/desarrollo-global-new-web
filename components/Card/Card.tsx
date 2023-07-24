@@ -19,13 +19,13 @@ export default function Card()
           <strong className="capitalize text-[18px]">
             curso especializados
           </strong>
-          <span className="bg-red-500 gap-[.5rem] text-[#fff] px-[.6rem] rounded-[.3rem] flex items-center">
+          <span className="bg-myRed gap-[.5rem] text-[#fff] px-[.6rem] rounded-[.3rem] flex items-center">
             <span className="w-[10px] h-[10px] rounded-[100%] bg-white block"></span>
             <span className="block text-[14px]">en vivo</span>
           </span>
         </div>
       </section>
-      <section className="flex-1 bg-bg p-[1.3rem]">
+      <section className="flex-1 p-[1.3rem]">
         <p className="text-primary text-center text-[28px] block px-[1rem] line-clamp-3 leading-[1.5rem] mb-[1rem]">
           Administración Financiera y Gestión Gubernamental
         </p>
