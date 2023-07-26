@@ -1,22 +1,19 @@
-import Link, { LinkProps } from 'next/link'
+import link from '@/components/NavBar/interfaces/link'
+import Link from 'next/link'
 import React from 'react'
-import { twMerge } from 'tailwind-merge'
 
-interface props extends LinkProps
+export default function Item({label,...props}:link) 
 {
-   label:string,
-}
-
-export default function Item({label,...props}:props) 
-{ 
   return (
-    <Link
-     {...props}
-     className='text-[18px] hover:opacity-[.8] transition-all duration-100 capitalize'
-     >
-      {
-        label
-      }
-    </Link>
+    <li>
+        <Link
+         {...props}
+         className='text-[18px] hover:opacity-[.8] capitalize'
+         >
+         {
+            label
+         }
+        </Link>
+    </li>
   )
 }

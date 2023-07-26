@@ -4,8 +4,8 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React,{Dispatch,SetStateAction,useEffect} from 'react'
-import Item from './components/Item'
-import items from './util/items'
+import Item from './Item'
+import items from '../util/items'
 
 interface props
 {

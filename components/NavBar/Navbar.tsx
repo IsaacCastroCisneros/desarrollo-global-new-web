@@ -7,7 +7,7 @@ import Item from './components/Item';
 import Button from '@/components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import MobMenu from './components/MobMenu/MobMenu';
+import MobMenu from './components/MobMenu';
 import Link from 'next/link';
 
 export default function Navbar() 
@@ -37,7 +37,7 @@ export default function Navbar()
         </div>
         <ul className="flex gap-[1.5rem] navbar:hidden">
           {items.map((item, pos) => (
-            <Item key={pos} href={item.href} label={item.label} />
+            <Item key={pos} {...item} />
           ))}
         </ul>
         <Button name='ingreso aula virtual' title='ingreso aula virtual' className="ml-auto navbar1:hidden">ingreso aula virtual</Button>

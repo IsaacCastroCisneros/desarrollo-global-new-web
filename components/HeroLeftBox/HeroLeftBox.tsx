@@ -20,7 +20,7 @@ export default function HeroLeftBox(props:props)
   }=props
 
   return (
-    <section className={twMerge(`text-[45px] flex-[1.2] bg-white z-[9] relative`,className)}>
+    <section className={twMerge(`text-[45px] flex-[1.2] z-[9] relative`,className)}>
       <strong className=" relative z-[1] uppercase hero-uppertitle pl-[1rem] pr-[2rem] py-[.3rem] rounded-[0px_1.5rem_0px_0px] bg-primary text-[#fff] inline-block mb-[1rem]">
         {upperTitle}
       </strong>
