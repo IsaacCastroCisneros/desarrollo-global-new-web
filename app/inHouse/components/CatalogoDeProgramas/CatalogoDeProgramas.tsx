@@ -15,7 +15,7 @@ export default function CatalogoDeProgramas()
       title="Catalogo de Programas"
       subtitle="Tenemos los programas para impulsar el crecimiento y el éxito de tu equipo."
     >
-      <div className="flex flex-col gap-[.5rem] mt-[2rem]">
+      <div className="flex flex-col gap-[.5rem]">
         {accordions.map((accordion, pos) => (
           <Accordion
             key={pos}

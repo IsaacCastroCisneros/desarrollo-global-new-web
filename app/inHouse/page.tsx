@@ -4,6 +4,8 @@ import StripeInHouse from './components/StripeInHouse'
 import CatalogoDeProgramas from './components/CatalogoDeProgramas/CatalogoDeProgramas'
 import PorQueElegirUnCursoInhouse from './components/PorQueElegirUnCursoInhouse/PorQueElegirUnCursoInhouse'
 import DescubraComoPodemosAyudarle from './components/DescubraComoPodemosAyudarle/DescubraComoPodemosAyudarle'
+import ExperienciaEducativaDeCalidad from './components/ExperienciaEducativaDeCalidad/ExperienciaEducativaDeCalidad'
+import SolicitaUnaCotizacionYaMismo from './components/SolicitaUnaCotizacionYaMismo/SolicitaUnaCotizacionYaMismo'
 
 export default function page() {
   return(
@@ -13,6 +15,8 @@ export default function page() {
       <CatalogoDeProgramas/>
       <PorQueElegirUnCursoInhouse/>
       <DescubraComoPodemosAyudarle/>
+      <ExperienciaEducativaDeCalidad/>
+      <SolicitaUnaCotizacionYaMismo/>
     </>
   )
 }

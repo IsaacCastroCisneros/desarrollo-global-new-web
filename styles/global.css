@@ -31,9 +31,14 @@ html
 
 @media  (max-width:700px) 
 {
-  h1,h2
+  h1,h2,strong
   {
     font-size: 25px !important;
+    line-height: 1.6rem !important;
+  }
+  strong
+  {
+    font-size: 22px !important;
     line-height: 1.6rem !important;
   }
   p

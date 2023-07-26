@@ -5,7 +5,7 @@ export default function Box({title,description}:box)
 {
   return (
     <div className="bg-[#fff] p-[1.6rem] rounded-[.5rem]">
-      <strong className='text-[30px] text-primary capitalize block mb-[.8rem]'>
+      <strong className='text-[30px] text-primary capitalize block mb-[.8rem] 700px:text-center'>
         {
           title
         }

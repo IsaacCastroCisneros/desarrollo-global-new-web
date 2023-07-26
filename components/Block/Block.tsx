@@ -27,7 +27,7 @@ export default function Block(props:props)
         <p className={`${inverted ? 'text-[#fff]':'text-primary'} text-[22px] block text-center capitalize max-w-[1000px] mx-auto`}>
           {subtitle}
         </p>
-        <section className="max-w-[100%] w-[60rem] mx-auto">{children}</section>
+        <section className="max-w-[100%] w-[60rem] mx-auto mt-[3rem] 700px:mt-[1.8rem]">{children}</section>
       </article>
     </div>
   );
