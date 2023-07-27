@@ -6,7 +6,7 @@ import HeroBanner from '@/components/HeroBanner/HeroBanner';
 export default function Hero() 
 {
   return (
-    <HeroBanner>
+    <HeroBanner className='pb-0'>
       <section className="flex-1 hero:text-center">
         <h1 className="text-primary font-bold text-[60px] leading-[2.7rem] mb-[1rem] hero:text-[33px] hero:leading-[2rem]">
           Obtén la <span className="text-myGreen2">Certificación</span> que

@@ -1,0 +1,1 @@
+type DGurl = 'modal'|'diplomas'|'cursos'|'geo'|'diplomados'|'inHouse'|'seminarios'|''

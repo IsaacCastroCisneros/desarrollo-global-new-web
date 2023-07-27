@@ -6,9 +6,10 @@ import { twMerge } from 'tailwind-merge'
 interface props extends FormHTMLAttributes<HTMLFormElement>
 {
   children:ReactNode
+  submit:()=>Promise<any>
 }
 
-export default function MyForm({children,className,...props}:props) 
+export default function MyForm({children,className,submit,...props}:props) 
 {
   const classNameTw=twMerge('',className) 
 
@@ -16,8 +17,9 @@ export default function MyForm({children,className,...props}:props)
     <form
       {...props}
       className={classNameTw}
-      onSubmit={(e) => {
+      onSubmit={async(e) => {
         e.preventDefault();
+        await submit()
       }}
     >
       {children}

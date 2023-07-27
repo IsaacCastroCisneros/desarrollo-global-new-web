@@ -5,13 +5,13 @@ import HeroLeftBox from '@/components/HeroLeftBox/HeroLeftBox';
 
 export default function Hero() {
   return (
-    <HeroBanner className="gap-[1rem] heroInhouse:flex-col pb-[3rem]">
+    <HeroBanner className="gap-[1rem] hero-response:flex-col">
       <HeroLeftBox
         upperTitle="in house"
         title={
           <>
             ¿Quieres llevar la capacitación de tu equipo al siguiente nivel?
-            <span className="text-myOrange block pr-[5rem] heroInhouse:p-0 heroInhouse:text-center">
+            <span className="text-myOrange block pr-[5rem] hero-response:p-0 hero-response:text-center">
               ¡Tenemos la solución perfecta para ti!
             </span>
           </>

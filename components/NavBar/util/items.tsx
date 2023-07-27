@@ -27,7 +27,7 @@ const items:Array<link>=
        label:"seminarios",
     },
     {
-       href:"/cantactones",
+       href:"/contactenos",
        label:"contactenos",
     },
     {

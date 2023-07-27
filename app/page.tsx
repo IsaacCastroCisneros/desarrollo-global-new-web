@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Hero from "./components/Hero/Hero"
-import Stripe from "./components/Stripe/Stripe"
+import Stripe from "@/components/Stripe/Stripe"
 import ListaDeProximos from "./components/ListaDeProximos/ListaDeProximos"
 import SomosTuMeJorOpcion from "./components/SomosTuMeJorOpcion/SomosTuMeJorOpcion"
 

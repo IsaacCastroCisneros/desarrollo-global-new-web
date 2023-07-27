@@ -18,14 +18,28 @@ html
   width: 1920px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.my-padding,.custom-container
+{
   padding-left:1rem;
   padding-right:1rem;
 }
 
-.my-padding
+.block-container
 {
-  padding-left:1rem;
-  padding-right:1rem;
+  width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+h2
+{
+  font-size: 45px;
+  font-weight: bold;
+  color: #0E2FAA;
+  display: block;
 }
 
 

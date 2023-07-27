@@ -6,10 +6,16 @@ import PorQueElegirUnCursoInhouse from './components/PorQueElegirUnCursoInhouse/
 import DescubraComoPodemosAyudarle from './components/DescubraComoPodemosAyudarle/DescubraComoPodemosAyudarle'
 import ExperienciaEducativaDeCalidad from './components/ExperienciaEducativaDeCalidad/ExperienciaEducativaDeCalidad'
 import SolicitaUnaCotizacionYaMismo from './components/SolicitaUnaCotizacionYaMismo/SolicitaUnaCotizacionYaMismo'
+import get from '@/util/get'
+import Context from './context/Context'
 
-export default function page() {
+export default async function page() 
+{
+  const{data,err}=await get('inHouse')
+  const inHouse =  data as Array<inHouse>
+
   return(
-    <>
+    <Context data={inHouse} err={err}>
       <Hero/>
       <StripeInHouse/>
       <CatalogoDeProgramas/>
@@ -17,6 +23,6 @@ export default function page() {
       <DescubraComoPodemosAyudarle/>
       <ExperienciaEducativaDeCalidad/>
       <SolicitaUnaCotizacionYaMismo/>
-    </>
+    </Context>
   )
 }
