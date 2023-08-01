@@ -12,6 +12,6 @@ export default async function page({params}:any)
   /* fd */
   
   return (
-    <div>{cursos.titulo}</div>
+    <div className='pt-[20rem]'>{cursos.titulo}</div>
   )
 }
