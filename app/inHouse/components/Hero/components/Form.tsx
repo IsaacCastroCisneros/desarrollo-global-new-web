@@ -9,6 +9,7 @@ import MyForm from '@/components/MyForm/MyForm';
 import MyLink from '@/components/MyLink/MyLink';
 import Select from '@/components/Select/Select';
 import selectOption from '@/interfaces/selectOption';
+import post from '@/util/post';
 import Image from 'next/image';
 import React, { useContext, useState } from 'react'
 
@@ -17,7 +18,7 @@ interface values
   nombre:string
   email:string
   telefono:string
-  programa:string
+  programa:{id:string,programa:string}
   cantidadDeAlumnos:cantidadDeAlumnos
   nivelDeCurso:nivelDeCurso
   empresaEntidad:string
@@ -33,7 +34,7 @@ export default function Form()
       nombre:"",
       email:"",
       telefono:"",
-      programa:"",
+      programa:{id:"",programa:""},
       cantidadDeAlumnos:"",
       empresaEntidad:"",
       nivelDeCurso:""
@@ -44,7 +45,7 @@ export default function Form()
 
   const programas:Array<selectOption> = data.map((data)=>
   {
-    return {value:data.id,label:data.titulo}
+    return {value:`${data.id}-${data.titulo}` ,label:data.titulo}
   }) 
 
   const cantidadDeAlumnos:Array<{value:cantidadDeAlumnos,label:string}>=
@@ -62,6 +63,29 @@ export default function Form()
     { value: "Avanzado", label: "Avanzado" },
   ];
 
+  async function submittingForm():Promise<void>
+  {
+    const form = new FormData()
+    form.append('pagina', "www.desarrolloglobal.com/inh")
+    form.append('cantidad', values.cantidadDeAlumnos)
+    form.append('inhouse', values.programa.programa)
+    form.append('id_inhouse', values.programa.id)
+    form.append('correo', values.email)
+    form.append('entidad', values.empresaEntidad)
+    form.append('nivel', values.nivelDeCurso)
+    form.append('nombres', values.nombre)
+    form.append('telefono', values.telefono)
+    /* form.append('ciudad', geo) */
+
+    const {data,err} = await post('inHouseProspecto',form)
+    console.log(data)
+    if(err.isErr)
+    {
+      console.log(err.err)
+    }
+  }
+
+
   return (
     <div className="p-[1rem] border-[4px] border-myOrange w-[580px] ml-auto rounded-[.6rem] relative 700px:w-[100%]">
       <Image
@@ -78,10 +102,11 @@ export default function Form()
         ¡Completa el formulario y solicita tu proforma personalizada ahora
         mismo!
       </p>
-      <MyForm submit={async () => {}}>
+      <MyForm submit={submittingForm}>
         <InputFlexContainer>
           <Input
             placeholder="Nombre"
+            onlyText
             value={values.nombre}
             onChange={(e) => setValues({ ...values, nombre: e.target.value })}
           />
@@ -109,10 +134,18 @@ export default function Form()
         </InputFlexContainer>
         <InputFlexContainer>
           <Select
-            value={values.programa}
+            value={values.programa.id}
             label="Selecciona un Programa"
             options={programas}
-            onChange={(e) => setValues({ ...values, programa: e.target.value })}
+            onChange={(e) => {
+              const value = e.target.value;
+              const split = value.split("-");
+
+              setValues({
+                ...values,
+                programa: { id: split[0], programa: split[1] },
+              });
+            }}
           />
         </InputFlexContainer>
         <InputFlexContainer className="mb-[1rem]">
@@ -144,7 +177,10 @@ export default function Form()
           <Button className="bg-myOrange flex-1 min-w-[247px]">
             Solicitar Profrorma
           </Button>
-          <MyLink href="" className="bg-myGreen2 flex-1 min-w-[247px]">
+          <MyLink
+            href="https://api.whatsapp.com/send?phone=51987756735&text=¡Hola Sheyla!,%20solicito%20información de la modalidad In House"
+            className="bg-myGreen2 flex-1 min-w-[247px]" target='_blank'
+          >
             WhatsApp
           </MyLink>
         </div>

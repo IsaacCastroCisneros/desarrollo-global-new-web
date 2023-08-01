@@ -3,6 +3,8 @@ import Hero from "./components/Hero/Hero"
 import Stripe from "@/components/Stripe/Stripe"
 import ListaDeProximos from "./components/ListaDeProximos/ListaDeProximos"
 import SomosTuMeJorOpcion from "./components/SomosTuMeJorOpcion/SomosTuMeJorOpcion"
+import get from "@/util/get"
+import Context from "./context/Context"
 
 export const metadata:Metadata = {
   title: 'Centro de Capacitación y Desarrollo Global',
@@ -10,14 +12,14 @@ export const metadata:Metadata = {
 }
 
 
-export default function Home() 
+export default async function Home() 
 {
   return (
     <>
-      <Hero/>
-      <Stripe/>
-      <ListaDeProximos/>
-      <SomosTuMeJorOpcion/>
+      <Hero />
+      <Stripe />
+      <ListaDeProximos />
+      <SomosTuMeJorOpcion />
     </>
-  )
+  );
 }

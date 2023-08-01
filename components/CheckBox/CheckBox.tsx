@@ -10,7 +10,7 @@ export default function CheckBox({label,...props}:props )
 
   return (
     <div className="flex gap-[.5rem] justify-center mb-[1rem]">
-      <input {...props} type="checkbox" />
+      <input {...props} type="checkbox" required />
       <label className="text-[14px]">{label}</label>
     </div>
   );

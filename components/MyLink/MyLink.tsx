@@ -7,6 +7,7 @@ interface props extends LinkProps
 {
     children:ReactNode
     className:string
+    target?:string
 }
 
 export default function MyLink({children,className,...props}:props) 

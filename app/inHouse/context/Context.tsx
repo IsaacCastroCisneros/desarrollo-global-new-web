@@ -9,12 +9,19 @@ interface props extends values
   children:ReactNode
 }
 
-export default function Context({children,data,err}:props) 
+export default function Context(props:props) 
 {
+  const 
+  {
+    children,
+    data,
+    err,
+  }=props
+
   const values =
   {
     data,
-    err
+    err,
   }
 
   return (

@@ -4,13 +4,15 @@
 const menuButtons:Array<menuButton>=
 [
   {
-    label:'próximos inicios'
+    label:'cursos',
+    realLabel:'próximos inicios'
+
   },
   {
     label:'diplomas',
   },
   {
-    label:'Cursos',
+    label:'cursos',
   },
   {
     label:'diplomados',
@@ -19,7 +21,8 @@ const menuButtons:Array<menuButton>=
     label:'inHouse',
   },
   {
-    label:'seminarios gratuitos',
+    label:'cursos',
+    realLabel:'seminarios gratuitos'
   }
 ]
 

@@ -1,3 +1,5 @@
+import DGurl from "@/types/DGurl"
+
 export default function gettingUrl(type:DGurl="",tag:string="",id:string="",limit:string="")
 {
     switch(type)
@@ -29,6 +31,10 @@ export default function gettingUrl(type:DGurl="",tag:string="",id:string="",limi
         case 'seminarios':
         {
            return `https://aula.desarrolloglobal.pe/v03/api/seminarios/${id}${limit}?offset=0` 
+        }
+        case 'inHouseProspecto':
+        {
+           return `https://aula.desarrolloglobal.pe/v03/api/inhouse/setProspecto` 
         }
   
         default: return ''
