@@ -7,6 +7,7 @@ export default async function page({params}:any)
 
   const{data}=await get('cursos',tag)
   /* formulacion-y-evaluacion-de-proyecto-de-inversion */
+  /* fd */
   
   return (
     <div>fdfdf</div>
