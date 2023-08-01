@@ -19,6 +19,7 @@ export default function Navbar()
       <MobMenu show={show} setShow={setShow} />
       <nav className="custom-container flex items-center justify-between">
         <div className="flex items-center gap-[.5rem] mr-[2rem]">
+          <Link href="/cursos/formulacion-y-evaluacion-de-proyecto-de-inversion">fd</Link>
           <Link href="/">
             <Image
               src="/img/DG-Logotipo.webp"
