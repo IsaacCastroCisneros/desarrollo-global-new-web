@@ -1,17 +1,27 @@
 import cursos from '@/interfaces/cursos'
 import get from '@/util/get'
 import React from 'react'
+import Context from './context/Context'
+import HeroProgarm from '@/components/Program/components/HeroProgarm'
+import BlockProgram from '@/components/BlockProgram/BlockProgram'
+import PorQueElegirNuestro from '@/components/Program/components/PorQueElegirNuestro/PorQueElegirNuestro'
+import ProfesoreProgram from '@/components/Program/components/ProfesoreProgram'
 
 export default async function page({params}:any) 
 {
   const{tag}=params
 
   const{data}=await get('cursos',tag)
-  const cursos = data as cursos
-  /* formulacion-y-evaluacion-de-proyecto-de-inversion */
-  /* fd */
-  
+  const curso = data as cursos
+  const{titulo,descripcion,profesores}=curso
+
   return (
-    <div className='pt-[20rem]'>{cursos.titulo}</div>
+    <Context data={curso}>
+      <HeroProgarm titulo={titulo} descripcion={descripcion} type="Curso" />
+      <BlockProgram>
+         <PorQueElegirNuestro/>
+         <ProfesoreProgram/>
+      </BlockProgram>
+    </Context>
   )
 }

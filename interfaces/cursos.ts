@@ -1,3 +1,5 @@
+import profesores from "./profesores";
+
 export default interface cursos
 {
     id: string;
@@ -33,14 +35,7 @@ export default interface cursos
       descripcion: string;
     }>;
     total_sesiones: number;
-    profesores:Array<{
-      nombre: string;
-      descripcion: string;
-      profesion: string;
-      telefono: string;
-      telefono_2: string;
-      avatar: string;
-    }> ;
+    profesores:profesores;
     testimonios:Array<{
       usuario: string;
       avatar: string;
