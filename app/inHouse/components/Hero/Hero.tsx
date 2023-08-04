@@ -5,9 +5,10 @@ import HeroLeftBox from '@/components/HeroLeftBox/HeroLeftBox';
 
 export default function Hero() {
   return (
-    <HeroBanner className="gap-[1rem] hero-response:flex-col">
+    <HeroBanner className="gap-[1rem] hero-response:flex-col" bgUrl='/img/fondoInhouse.png' >
       <HeroLeftBox
         upperTitle="in house"
+        styles={{title:"45px"}}
         title={
           <>
             ¿Quieres llevar la capacitación de tu equipo al siguiente nivel?

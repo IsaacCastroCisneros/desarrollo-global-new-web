@@ -10,9 +10,10 @@ export default function Stripe({label,...props}:props)
 {
   return (
     <div 
-      className="flex justify-between px-[1.8rem] py-[.5rem] rounded-[.3rem] border-myBlue border-[1px] items-center mb-[.5rem]">
+      className="flex gap-[.5rem] px-[.8rem] py-[.5rem] rounded-[.3rem] border-myBlue border-[1px] items-center mb-[.5rem]">
       <Image
         {...props}
+        alt={props.alt}
       />
       <p className="text-myBlue text-[18px] capitalize">{label}</p>
     </div>

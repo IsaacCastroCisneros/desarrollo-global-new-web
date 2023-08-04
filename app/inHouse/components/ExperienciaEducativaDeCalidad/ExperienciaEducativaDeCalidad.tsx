@@ -15,7 +15,7 @@ export default function ExperienciaEducativaDeCalidad()
          <Image src="/img/DG-Logotipo.webp"  className='1000px:w-[200px] 1000px:h-[initial]' width={384} height={90} alt='logo desarrollo global' />
          <Image src="/img/certificacion_iso_co.webp"  className='1000px:w-[150px] 1000px:h-[initial]' width={253} height={120} alt='certificacion iso' />
       </div>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(25rem,1fr))] gap-[1rem] 700px:grid-cols-[repeat(auto-fill,minmax(13rem,1fr))]">
+      <div className="grid grid-cols-[repeat(2,1fr)] mx-auto gap-[1rem] 800px:grid-cols-[repeat(1,1fr)] ">
         {
             boxes.map((box,pos)=>
             (

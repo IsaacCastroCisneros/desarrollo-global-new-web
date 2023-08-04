@@ -3,8 +3,11 @@ import Hero from "./components/Hero/Hero"
 import Stripe from "@/components/Stripe/Stripe"
 import ListaDeProximos from "./components/ListaDeProximos/ListaDeProximos"
 import SomosTuMeJorOpcion from "./components/SomosTuMeJorOpcion/SomosTuMeJorOpcion"
-import get from "@/util/get"
-import Context from "./context/Context"
+import AprendeDeLosMejores from "./components/AprendeDeLosMejores/AprendeDeLosMejores"
+import AcercaDeNosotros from "./components/AcercaDeNosotros/AcercaDeNosotros"
+import OpinionesDeNuestros from "./components/OpinionesDeNuestros/OpinionesDeNuestros"
+import LaConfianzaDeNuestros from "./components/LaConfianzaDeNuestros/LaConfianzaDeNuestros"
+import Hablemos from "./components/Hablemos/Hablemos"
 
 export const metadata:Metadata = {
   title: 'Centro de Capacitación y Desarrollo Global',
@@ -20,6 +23,11 @@ export default async function Home()
       <Stripe />
       <ListaDeProximos />
       <SomosTuMeJorOpcion />
+      <AprendeDeLosMejores/>
+      <AcercaDeNosotros/>
+      <OpinionesDeNuestros/>
+      <LaConfianzaDeNuestros/>
+      <Hablemos/>
     </>
   );
 }

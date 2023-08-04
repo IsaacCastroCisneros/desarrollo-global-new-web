@@ -28,11 +28,26 @@ html
 
 .block-container
 {
-  width: 60rem;
+  width: 65.5rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
 }
+
+.slick-my-dots
+{
+   position: absolute;
+   bottom: -2rem;
+   display: flex !important;
+   gap: .5rem;
+   transform: translateX(-50%);
+   left: 50%;
+}
+
+.slick-my-dots .slick-active span
+{
+  background-color: #1DD8FF;
+} 
 
 h2
 {
@@ -42,6 +57,17 @@ h2
   display: block;
 }
 
+.my-elipsis
+{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+span
+{
+  display: block;
+}
 
 @media  (max-width:700px) 
 {

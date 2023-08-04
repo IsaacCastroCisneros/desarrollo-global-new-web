@@ -6,10 +6,11 @@ export default function NuestraCultura() {
   return (
     <BlockNosotros
       bgUrl="img/nosotrosblock2.webp"
+      styles={{leftContent:"pb-[3rem]"}}
       leftContent={
         <>
           <h2 className="text-primary block mb-[2.5rem]">Nuestra Cultura</h2>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(11rem,1fr))] gap-y-[1.5rem] gap-x-[3rem]">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(11rem,1fr))] gap-y-[1.5rem] gap-x-[3rem] pr-[9.5rem] 1450px:pr-0">
             <Box
               img={{
                 src: "/img/nosotrosmano.webp",
