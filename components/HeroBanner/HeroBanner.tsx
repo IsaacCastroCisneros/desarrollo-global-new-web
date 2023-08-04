@@ -37,12 +37,12 @@ export default function HeroBanner(myProps: props)
       }
     >
       <div className='w-[1920px] max-w-[100%] mx-auto mt-[70.88px] 1362px:!bg-none'
-       style={{
+      /*  style={{
         backgroundImage: `url(/img/mujer-asiatica-agent.webp)`,
         backgroundSize: "contain",
         backgroundPositionX:"right",
         backgroundRepeat: "no-repeat",
-      }}
+      }} */
        >
         <article {...props} className={classNameTw}>
           {children}
