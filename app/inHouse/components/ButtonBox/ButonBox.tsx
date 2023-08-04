@@ -14,7 +14,7 @@ export default function ButonBox({title,button,className}:props)
 
   return (
     <div className={classNameTw}>
-      <span className="text-[35px] 700px:text-[22px]">
+      <span className="text-[35px] font-medium 700px:text-[22px]">
         {title}
       </span>
       {
