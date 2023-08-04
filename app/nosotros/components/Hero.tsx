@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <HeroBanner className="items-stretch py-0" bg={false} bgUrl={false}>
       <HeroLeftBox
-        className="pt-[calc(70.88px_+_5rem)] hero:pt-0 bg-transparent pb-[3rem] bg-gradient-to-r from-white to-transparent from-[77%] to-100%"
+        className="pt-[5rem] hero:pt-0 bg-transparent pb-[3rem] bg-gradient-to-r from-white to-transparent from-[77%] to-100%"
         upperTitle="nosotros"
         title="Descubre porque alcanzar tus objetivos profesionales con nosotros"
         subtitle={
