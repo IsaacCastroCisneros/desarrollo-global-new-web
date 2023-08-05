@@ -2,7 +2,8 @@ import HeroBanner from '@/components/HeroBanner/HeroBanner'
 import HeroLeftBox from '@/components/HeroLeftBox/HeroLeftBox'
 import React from 'react'
 import boxes from './util/boxes';
-import Box from './components/Box';
+import Box from './components/Boxes/components/Box';
+import Boxes from './components/Boxes/Boxes';
 
 export default function page() 
 {
@@ -27,16 +28,10 @@ export default function page()
         upperTitle="CONTACTO"
         subtitle="Si necesitas ayuda o tienes alguna pregunta, estamos aquí para asistirte"
       />
-      <div className="absolute bottom-0 translate-y-[70%] 1362px:translate-y-[95%] flex justify-center w-[100%] left-0">
-        <div className="flex gap-[1rem] px-[1rem] 1362px:flex-col">
-          {boxes.map((box, pos) => (
-            <Box {...box} key={pos} />
-          ))}
-        </div>
-      </div>
+      <Boxes styles='1362px:hidden absolute bottom-0 translate-y-[70%]' />
     </HeroBanner>
-    <div className='bg-primary py-[20rem]'>
-
+    <div className='bg-primary py-[10rem] 1362px:py-[2rem]'>
+         <Boxes styles='hidden 1362px:flex' />
     </div>
     </>
   );

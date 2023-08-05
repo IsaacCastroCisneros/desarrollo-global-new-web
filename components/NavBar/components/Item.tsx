@@ -8,7 +8,7 @@ export default function Item({label,...props}:link)
     <li>
         <Link
          {...props}
-         className='text-[18px] hover:opacity-[.8] capitalize'
+         className='text-[18px] hover:opacity-[.8] capitalize outline-none'
          >
          {
             label

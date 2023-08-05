@@ -1,5 +1,5 @@
 import React from 'react'
-import box from '../interfaces/box'
+import box from '../../../interfaces/box'
 import Image from 'next/image'
 
 export default function Box(props:box) 
