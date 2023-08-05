@@ -6,6 +6,7 @@ interface props extends HtmlHTMLAttributes<HTMLElement>
   children:ReactNode
   bgUrl?:string|false
   bg?:boolean
+  divStyle?:Record<any,any>
 }
 
 export default function HeroBanner(myProps: props) 
@@ -15,17 +16,18 @@ export default function HeroBanner(myProps: props)
     children,
     bgUrl="/img/fondoInhouse.png",
     bg=true,
+    divStyle,
     ...props
   }=myProps
 
   const classNameTw = twMerge(
-    "flex items-start pt-[5rem] w-[65rem] max-w-[100%] mx-auto my-padding pb-[3rem] relative hero:pt-[3rem]",
+    "flex items-start pt-[5rem] w-[1340px] max-w-[100%] mx-auto my-padding pb-[3rem] relative hero:pt-[3rem]",
     className
   );
 
   return (
     <div
-      className={`${bg ? "bg-bg" : "bg-white"}`}
+      className={`${bg ? "bg-bg" : "bg-white"} relative`}
       style={
         bgUrl !== false
           ? {
@@ -37,12 +39,7 @@ export default function HeroBanner(myProps: props)
       }
     >
       <div className='w-[1920px] max-w-[100%] mx-auto mt-[70.88px] 1362px:!bg-none'
-     /*   style={{
-        backgroundImage: `url(/img/mujer-asiatica-agent.webp)`,
-        backgroundSize: "contain",
-        backgroundPositionX:"right",
-        backgroundRepeat: "no-repeat",
-      }} */
+       style={divStyle} 
        >
         <article {...props} className={classNameTw}>
           {children}

@@ -21,7 +21,7 @@ export default function Hero() {
         diseñados para satisfacer las necesidades específicas de tu entidad o
         institución."
       />
-      <section className="flex-1">
+      <section className="flex-1 mx-auto">
         <Form />
       </section>
     </HeroBanner>
