@@ -10,7 +10,7 @@ export default function HeroLink({children,...props}:props)
 {
   return (
     <Link  
-     className='my-shadow px-[1.2rem] py-[.4rem] text-primary hover:bg-primary hover:text-[#fff] text-[22px] bg-white'
+     className='px-[1.2rem] py-[.4rem] text-primary hover:bg-primary hover:text-[#fff] text-[22px] bg-white font-bold'
      {...props}
      >
       {

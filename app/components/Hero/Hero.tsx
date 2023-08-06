@@ -6,11 +6,17 @@ import HeroBanner from '@/components/HeroBanner/HeroBanner';
 export default function Hero() 
 {
   return (
-    <HeroBanner className='pb-0 hero:pb-[2rem]' bgUrl='/img/img/indexBG.png' >
+    <HeroBanner
+      className="pb-0 hero:pb-[2rem]"
+      bgUrl="/img/img/indexBG.png"
+      isLayer={false}
+    >
       <section className="flex-1 hero:text-center">
         <h1 className="text-primary font-bold text-[60px] leading-[2.7rem] mb-[1rem] hero:text-[33px] hero:leading-[2rem] hero:text-center">
-          <span className='hero:flex justify-center'>Obtén la&nbsp;<span className="text-myGreen">Certificación</span> </span> que
-          necesitas para trabajar en el estado
+          <span className="hero:flex hero:justify-center  flex">
+            <span>Obtén la</span>&nbsp;<span className="text-myGreen">Certificación</span>
+          </span>
+          que necesitas para trabajar en el estado
         </h1>
         <p className="text-[28px] mb-[1.2rem] hero1:text-[20px]">
           {` "Únete a nuestra comunidad de más de 50,000 alumnos capacitados y

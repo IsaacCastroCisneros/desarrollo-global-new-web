@@ -12,6 +12,11 @@ html
 {
   box-shadow: 0 0rem .5rem 0px #585858;
 }
+.my-shadow2
+{
+  box-shadow: 0 0rem .5rem 0px #d9dbda;
+}
+
 
 .custom-container
 {
@@ -48,6 +53,11 @@ html
 {
   background-color: #1DD8FF;
 } 
+
+.slick-list
+{
+  padding: .5rem 0;
+}
 
 h2
 {

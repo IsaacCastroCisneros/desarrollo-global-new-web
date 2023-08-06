@@ -87,7 +87,7 @@ export default function Form()
 
 
   return (
-    <div className="p-[1rem] border-[4px] border-myOrange w-[580px] ml-auto rounded-[.6rem] relative 700px:w-[100%]">
+    <div className="p-[1rem] border-[4px] border-myOrange w-[580px] ml-auto rounded-[.6rem] relative 700px:w-[100%] bg-white">
       <Image
         src="/img/inhouseArrow.webp"
         className="hero-response:hidden absolute left-0 translate-x-[-120%] rotate-[-90deg] top-[-3rem]"
@@ -179,7 +179,7 @@ export default function Form()
           </Button>
           <MyLink
             href="https://api.whatsapp.com/send?phone=51987756735&text=¡Hola Sheyla!,%20solicito%20información de la modalidad In House"
-            className="bg-myGreen2 flex-1 min-w-[247px]" target='_blank'
+            className="bg-myGreen5 flex-1 min-w-[247px]" target='_blank'
           >
             WhatsApp
           </MyLink>

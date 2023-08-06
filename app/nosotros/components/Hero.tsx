@@ -5,9 +5,9 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <HeroBanner className="items-stretch py-0" bg={false} bgUrl={false}>
+    <HeroBanner className="items-stretch py-0" bg={false}>
       <HeroLeftBox
-        className="pt-[5rem] hero:pt-0 bg-transparent pb-[3rem] bg-gradient-to-r from-white to-transparent from-[77%] to-100%"
+        className="pt-[5rem] hero:pt-0 bg-transparent pb-[3rem]"
         upperTitle="nosotros"
         title="Descubre porque alcanzar tus objetivos profesionales con nosotros"
         subtitle={
@@ -19,20 +19,22 @@ export default function Hero() {
               height={134}
               alt="logo desarrollo y certificacion iso"
             />
-            <p className="text-[22px] text-[#0D30A7] relative">
+            <p className="text-[22px] text-[#0D30A7] relative font-medium">
               {`Nuestra empresa cuenta con la "Certificación de calidad" ISO 9001-2015`}
             </p>
           </>
         }
       />
       <div className="flex-1 hero-response:hidden">
-        <Image
-          width={1600}
-          height={652}
-          className="w-[1600px] h-[652px] absolute bottom-0 left-0"
-          alt="grupo de profesionales"
-          src="/img/heroNosotrosbanner.webp"
-        />
+        <div className="fadeImage absolute bottom-0 left-0">
+          <Image
+            width={1600}
+            height={652}
+            className="w-[1600px] h-[652px]"
+            alt="grupo de profesionales"
+            src="/img/heroNosotrosbanner.webp"
+          />
+        </div>
       </div>
     </HeroBanner>
   );

@@ -8,7 +8,7 @@ export default function Hero() {
     <HeroBanner className="gap-[1rem] hero-response:flex-col" bgUrl='/img/fondoInhouse.png' >
       <HeroLeftBox
         upperTitle="in house"
-        styles={{title:"45px"}}
+        styles={{title:"45px",subtitle:"text-[#000] font-medium"}}
         title={
           <>
             ¿Quieres llevar la capacitación de tu equipo al siguiente nivel?

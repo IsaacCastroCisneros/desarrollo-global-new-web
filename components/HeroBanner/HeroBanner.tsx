@@ -7,6 +7,8 @@ interface props extends HtmlHTMLAttributes<HTMLElement>
   bgUrl?:string|false
   bg?:boolean
   divStyle?:Record<any,any>
+  styles?:{container:string}
+  isLayer?:boolean
 }
 
 export default function HeroBanner(myProps: props) 
@@ -17,6 +19,8 @@ export default function HeroBanner(myProps: props)
     bgUrl="/img/fondoInhouse.png",
     bg=true,
     divStyle,
+    styles={container:""},
+    isLayer=true,
     ...props
   }=myProps
 
@@ -25,9 +29,13 @@ export default function HeroBanner(myProps: props)
     className
   );
 
+  const{container}=styles
+
+  console.log(container)
+
   return (
     <div
-      className={`${bg ? "bg-bg" : "bg-white"} relative`}
+      className={twMerge(`relative`,container)}
       style={
         bgUrl !== false
           ? {
@@ -38,13 +46,37 @@ export default function HeroBanner(myProps: props)
           : {}
       }
     >
-      <div className='w-[1920px] max-w-[100%] mx-auto mt-[70.88px] 1362px:!bg-none'
-       style={divStyle} 
-       >
+      {isLayer && (
+        <div className="absolute top-0 left-0 w-[100%] h-[100%] flex items-stretch">
+          <Layer
+            style={{
+              backgroundImage: "linear-gradient(to right, #c7cefc , #fff)",
+            }}
+          />
+          <Layer className="bg-[#fff]" />
+        </div>
+      )}
+      <div
+        className="w-[1920px] relative max-w-[100%] mx-auto mt-[70.88px] 1362px:!bg-none"
+        style={divStyle}
+      >
         <article {...props} className={classNameTw}>
           {children}
         </article>
       </div>
     </div>
+  );
+}
+
+function Layer({className,...props}:HtmlHTMLAttributes<HTMLElement>)
+{
+  return (
+    <div
+      {...props}
+      className={twMerge(
+        "flex-1 opacity-[.6]",
+        className
+      )}
+    ></div>
   );
 }

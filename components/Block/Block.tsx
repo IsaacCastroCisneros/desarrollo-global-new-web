@@ -49,7 +49,7 @@ export default function Block(props:props)
           <p
             className={twMerge(`${
               inverted ? "text-[#fff]" : "text-[#000]"
-            } text-[22px] block text-center capitalize max-w-[1000px] mx-auto font-bold`,p)}
+            } text-[22px] block text-center capitalize max-w-[1000px] mx-auto font-medium`,p)}
           >
             {subtitle}
           </p>

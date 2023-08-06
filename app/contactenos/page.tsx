@@ -1,8 +1,6 @@
 import HeroBanner from '@/components/HeroBanner/HeroBanner'
 import HeroLeftBox from '@/components/HeroLeftBox/HeroLeftBox'
 import React from 'react'
-import boxes from './util/boxes';
-import Box from './components/Boxes/components/Box';
 import Boxes from './components/Boxes/Boxes';
 
 export default function page() 
@@ -10,6 +8,8 @@ export default function page()
   return (
     <>
     <HeroBanner
+      isLayer={false}
+      styles={{container:"bg-[#f8f8f8]"}}
       bgUrl={false}
       divStyle={{
         backgroundImage: `url(/img/mujer-asiatica-agent.webp)`,

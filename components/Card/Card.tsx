@@ -7,8 +7,8 @@ import { faPen } from '@fortawesome/free-solid-svg-icons';
 export default function Card() 
 {
   return (
-    <div className="w-[385px] 500px:w-[100%] rounded-[.5rem] overflow-hidden flex flex-col my-shadow mx-auto">
-      <section className="relative my-shadow block">
+    <div className="w-[385px] 500px:w-[100%] rounded-[.5rem] overflow-hidden flex flex-col my-shadow2 mx-auto">
+      <section className="relative my-shadow2 block">
         <Image
           src="/img/cardexample.webp"
           className='500px:w-[100%]'

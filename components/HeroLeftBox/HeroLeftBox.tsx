@@ -50,7 +50,7 @@ export default function HeroLeftBox(props:props)
       {typeof subtitle === "string" && (
         <p
           className={twMerge(
-            "text-[24px] hero-response:text-center text-myBlue2",
+            "text-[24px] hero-response:text-center text-myBlue2 font-medium",
             customSubtitle
           )}
         >
