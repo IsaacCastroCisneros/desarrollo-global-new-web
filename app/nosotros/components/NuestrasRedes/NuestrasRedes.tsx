@@ -5,8 +5,8 @@ import Box from './components/Box'
 
 export default function NuestrasRedes() {
   return (
-    <Block title='Nuestras Redes'>
-       <div className='grid gap-[1rem] grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] 700px:grid-cols-[repeat(auto-fill,minmax(274px,1fr))]'>
+    <Block title='Nuestras Redes' styles={{section:"w-[55rem]"}} >
+       <div className='grid gap-[4rem] grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] 700px:grid-cols-[repeat(auto-fill,minmax(274px,1fr))]'>
         {
           boxes.map((box,pos)=>
           (

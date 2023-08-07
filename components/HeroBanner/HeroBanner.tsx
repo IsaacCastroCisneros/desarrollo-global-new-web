@@ -25,7 +25,7 @@ export default function HeroBanner(myProps: props)
   }=myProps
 
   const classNameTw = twMerge(
-    "flex items-start pt-[5rem] custom-container2 pb-[3rem] relative hero:pt-[3rem]",
+    "flex items-start pt-[4.5rem] custom-container2 pb-[3rem] hero:pt-[3rem]",
     className
   );
 
@@ -33,7 +33,7 @@ export default function HeroBanner(myProps: props)
 
   return (
     <div
-      className={twMerge(`relative hero-top-margin`,container)}
+      className={twMerge(`relative hero-top-margin`, container)}
       style={
         bgUrl !== false
           ? {
@@ -44,16 +44,6 @@ export default function HeroBanner(myProps: props)
           : {}
       }
     >
-      {isLayer && (
-        <div className="absolute top-0 left-0 w-[100%] h-[100%] flex items-stretch">
-          <Layer
-            style={{
-              backgroundImage: "linear-gradient(to right, #c7cefc , #fff)",
-            }}
-          />
-          <Layer className="bg-[#fff]" />
-        </div>
-      )}
       <div
         className="w-[1920px] relative max-w-[100%] mx-auto 1362px:!bg-none"
         style={divStyle}
@@ -63,18 +53,5 @@ export default function HeroBanner(myProps: props)
         </article>
       </div>
     </div>
-  );
-}
-
-function Layer({className,...props}:HtmlHTMLAttributes<HTMLElement>)
-{
-  return (
-    <div
-      {...props}
-      className={twMerge(
-        "flex-1 opacity-[.6]",
-        className
-      )}
-    ></div>
   );
 }

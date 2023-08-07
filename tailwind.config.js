@@ -26,6 +26,7 @@ module.exports = {
         myGray3:"#707070",
         myGray4:"#F6F6F6",
         myGray5:"#F5F5F5",
+        myGray6:"#FAFAFA",
         bg:"#F3F6FF",
         bg2:"#f8f9fa",
         bg3:"#1E228D",
@@ -39,6 +40,7 @@ module.exports = {
         myOrange:"#E86B2A",
         border:"#919191",
         border2:"#D7D8E0",
+        border3:"#e1e1e1",
       },
       screens:
       {
@@ -47,6 +49,7 @@ module.exports = {
         'hero-response':{'max':'1305px'},
         'hero':{'max':'1277px'},
         'hero1':{'max':'716px'},
+        '1736px':{'max':'1736px'},
         '1500px':{'max':'1500px'},
         '1450px':{'max':'1450px'},
         '1362px':{'max':'1362px'},
