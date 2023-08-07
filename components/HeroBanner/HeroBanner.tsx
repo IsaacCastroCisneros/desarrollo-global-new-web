@@ -25,7 +25,7 @@ export default function HeroBanner(myProps: props)
   }=myProps
 
   const classNameTw = twMerge(
-    "flex items-start pt-[3.7rem] custom-container2 pb-[3rem] hero:pt-[3rem] 1300px:gap-[1rem]",
+    "flex items-start pt-[3.7rem] custom-container2 hero:pt-[3rem] 1300px:gap-[1rem] h-[759px] 1300px:h-[initial] 1300px:pb-[3rem]",
     className
   );
 

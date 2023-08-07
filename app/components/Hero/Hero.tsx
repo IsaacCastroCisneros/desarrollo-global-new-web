@@ -7,7 +7,7 @@ export default function Hero()
 {
   return (
     <HeroBanner
-      className="pb-0 hero:pb-[2rem]"
+      className="pb-0 hero:pb-[2rem] items-stretch"
       bgUrl="/img/indexBG.webp"
       isLayer={false}
     >
@@ -28,12 +28,12 @@ export default function Hero()
           <HeroLink href="/inHouse">InHouse</HeroLink>
         </div>
       </section>
-      <section className="flex-1 hero:hidden">
+      <section className="flex-1 hero:hidden flex items-end">
         <Image
           src="/img/heroLeftImg.webp"
-          width={663}
-          className="mx-auto"
-          height={744}
+          width={744}
+          className="mx-auto min-w-[744px] h-[663px]"
+          height={663}
           alt="hombre sosteniendo laptop"
         />
       </section>
