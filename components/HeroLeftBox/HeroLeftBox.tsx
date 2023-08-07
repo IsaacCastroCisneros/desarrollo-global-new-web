@@ -29,7 +29,7 @@ export default function HeroLeftBox(props:props)
 
   return (
     <section
-      className={twMerge(`text-[45px] flex-[1.2] z-[9] relative pt-[3rem]`, className)}
+      className={twMerge(`text-[45px] flex-[1.2] z-[9] relative pt-[4rem] pr-[5rem]`, className)}
     >
       <strong
         className={twMerge(
@@ -41,7 +41,7 @@ export default function HeroLeftBox(props:props)
       </strong>
       <h1
         className={twMerge(
-          "text-primary relative text-[50px] font-bold flex flex-col leading-[2.5rem] mb-[1rem] pr-[3rem] hero-response:p-0 hero-response:text-center",
+          "text-primary relative text-[45px] font-bold flex flex-col leading-[2.5rem] mb-[1rem] hero-response:p-0 hero-response:text-center",
           customTitle
         )}
       >

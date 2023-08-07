@@ -33,7 +33,7 @@ export default function Hero()
           height={816}
           className="min-w-[2000px] absolute left-[-9rem]"
           alt="grupo de profesionales"
-          src="/img/nosotrosBg.png"
+          src="/img/nosotrosBg.webp"
         />
       </div>
     </HeroBanner>

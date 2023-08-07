@@ -15,10 +15,10 @@ export default function Hero() {
           </p>
         </section>
         <section className="flex-1">
-            <Image src="/img/Enmascarar grupo 7.png" width={189} height={222} alt='profesor dictando clase' />
-            <Image src="/img/Enmascarar grupo 8.png" width={220} height={260} alt='profesor dictando clase' />
-            <Image src="/img/Enmascarar grupo 9.png" width={230} height={260} alt='profesor dictando clase' />
-            <Image src="/img/Enmascarar grupo 10.png" width={188} height={210} alt='profesor dictando clase' />
+            <Image src="/img/Enmascarar grupo 7.webp" width={189} height={222} alt='profesor dictando clase' />
+            <Image src="/img/Enmascarar grupo 8.webp" width={220} height={260} alt='profesor dictando clase' />
+            <Image src="/img/Enmascarar grupo 9.webp" width={230} height={260} alt='profesor dictando clase' />
+            <Image src="/img/Enmascarar grupo 10.webp" width={188} height={210} alt='profesor dictando clase' />
         </section>
       </article>
     </div>

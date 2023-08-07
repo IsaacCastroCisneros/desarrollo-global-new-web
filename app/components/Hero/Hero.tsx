@@ -8,7 +8,7 @@ export default function Hero()
   return (
     <HeroBanner
       className="pb-0 hero:pb-[2rem]"
-      bgUrl="/img/img/indexBG.png"
+      bgUrl="/img/img/indexBG.webp"
       isLayer={false}
     >
       <section className="flex-1 hero:text-center">

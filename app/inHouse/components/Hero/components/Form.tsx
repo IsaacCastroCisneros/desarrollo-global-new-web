@@ -87,18 +87,18 @@ export default function Form()
 
 
   return (
-    <div className="p-[1rem] border-[4px] border-myOrange w-[580px] ml-auto rounded-[.6rem] relative 700px:w-[100%] bg-white">
+    <div className="p-[1rem] border-[4px] border-myOrange w-[589px] ml-auto rounded-[.6rem] relative 700px:w-[100%] bg-white">
       <Image
         src="/img/inhouseArrow.webp"
-        className="hero-response:hidden absolute left-0 translate-x-[-120%] rotate-[-90deg] top-[-3rem]"
+        className="hero-response:hidden absolute left-0 translate-x-[-110%] rotate-[-85deg] top-[-.7rem]"
         width={194}
         height={174}
         alt="flecha naranja"
       />
-      <strong className="text-[34px] mb-[.8rem] text-center block 700px:text-[25px]">
+      <strong className="text-[34px] mb-[.8rem] block 700px:text-[25px] 700px:text-center">
         Solicitar una cotización aquí
       </strong>
-      <p className="text-[22px] mb-[.8rem] text-center block">
+      <p className="text-[22px] mb-[1.5rem] block 700px:text-center font-medium">
         ¡Completa el formulario y solicita tu proforma personalizada ahora
         mismo!
       </p>
@@ -148,7 +148,7 @@ export default function Form()
             }}
           />
         </InputFlexContainer>
-        <InputFlexContainer className="mb-[1rem]">
+        <InputFlexContainer className="mb-[1.8rem]">
           <Select
             label="Nivel del Curso"
             options={nivelDeCurso}
@@ -175,7 +175,7 @@ export default function Form()
         <CheckBox label="Acepto los Términos y Condiciones y las políticas de Privacidad de Datos." />
         <div className="flex gap-[.5rem] flex-wrap">
           <Button className="bg-myOrange flex-1 min-w-[247px]">
-            Solicitar Profrorma
+            Solicitar Proforma
           </Button>
           <MyLink
             href="https://api.whatsapp.com/send?phone=51987756735&text=¡Hola Sheyla!,%20solicito%20información de la modalidad In House"
