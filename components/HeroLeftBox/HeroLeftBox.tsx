@@ -29,7 +29,7 @@ export default function HeroLeftBox(props:props)
 
   return (
     <section
-      className={twMerge(`text-[45px] flex-[1.2] z-[9] relative pt-[4rem] pr-[5rem]`, className)}
+      className={twMerge(`text-[45px] flex-[1.2] z-[9] relative pt-[4rem] pr-[5rem] 1300px:pr-[0]`, className)}
     >
       <strong
         className={twMerge(
