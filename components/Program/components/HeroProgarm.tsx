@@ -11,7 +11,7 @@ interface props
 export default function HeroProgarm({titulo,descripcion,type}:props) 
 {
   return (
-    <div className="bg-myBlue3 pt-[5rem] pb-[5rem]">
+    <div className="bg-myBlue3 pt-[5rem] pb-[6rem]">
       <BlockProgram>
         <strong className="text-[22px] text-myGreen3 block">
           {type} de Alta Especialización

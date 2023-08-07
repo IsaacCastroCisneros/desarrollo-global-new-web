@@ -32,7 +32,7 @@ export default function Hero() {
             height={652}
             className="w-[1600px] h-[652px]"
             alt="grupo de profesionales"
-            src="/img/heroNosotrosbanner.webp"
+            src="/img/nosotrosBg.png"
           />
         </div>
       </div>

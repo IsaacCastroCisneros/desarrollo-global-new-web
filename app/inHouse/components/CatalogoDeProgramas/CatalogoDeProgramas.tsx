@@ -3,12 +3,12 @@
 import Block from '@/components/Block/Block'
 import React, { useState } from 'react'
 import Accordion from './components/Accordion/Accordion';
-import currentAccordion from './components/Accordion/interfaces/currentAccordion';
 import accordions from './util/accordions';
+import useAccordion from '@/hooks/useAccordion';
 
 export default function CatalogoDeProgramas() 
 {
-  const[active,setActive]=useState<currentAccordion>({current:0,show:true})
+  const{handleUpdating,current,handleIsActive}=useAccordion()
 
   return (
     <Block
@@ -20,10 +20,11 @@ export default function CatalogoDeProgramas()
           <Accordion
             key={pos}
             label={accordion.label}
-            active={active}
+            current={current}
             id={pos}
+            handleUpdating={handleUpdating}
+            handleIsActive={handleIsActive}
             items={accordion.items}
-            setActive={setActive}
           />
         ))}
       </div>

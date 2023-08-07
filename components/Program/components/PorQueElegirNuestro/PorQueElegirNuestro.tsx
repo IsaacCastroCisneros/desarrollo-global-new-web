@@ -21,7 +21,7 @@ export default function PorQueElegirNuestro()
            ))
          }
       </ul>
-      <div className="p-[2rem] text-[#000] my-shadow mt-[4.3rem]">
+      <div className="p-[2rem] text-[#000] my-shadow mt-[4.3rem] rounded-[.5rem]">
         <strong className="text-[26px] block mb-[.6rem]">
           ¿Por qué elegir nuestro programa de capacitación?
         </strong>
@@ -34,7 +34,7 @@ export default function PorQueElegirNuestro()
           FINAL TIPO OSCE EN VIVO.
         </p>
       </div>
-      <ul className='flex bg-myGray2 text-[#000] overflow-hidden rounded-[.7rem] mt-[2rem]'>
+      <ul className='flex bg-myGray2 text-[#000] overflow-hidden rounded-[.7rem] mt-[2rem] mb-[2.8rem]'>
         {
           options.map((opt,pos)=>
           (

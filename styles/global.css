@@ -10,22 +10,39 @@ html
 
 .my-shadow
 {
-  box-shadow: 0 0rem .5rem 0px #585858;
+  box-shadow: 0 0rem .5rem 0px #afafaf;
 }
 .my-shadow2
 {
   box-shadow: 0 0rem .5rem 0px #d9dbda;
 }
 
+button
+{
+  outline: none;
+}
 
 .custom-container
 {
   width: 1920px;
+ 
+}
+.custom-container2
+{
+  width: 1340px;
+}
+.custom-container,.custom-container2
+{
   max-width: 100%;
   margin: 0 auto;
 }
 
-.my-padding,.custom-container
+.hero-top-margin
+{
+  margin-top: 70.88px;
+}
+
+.my-padding,.custom-container,.custom-container2
 {
   padding-left:1rem;
   padding-right:1rem;
@@ -74,7 +91,7 @@ h2
   text-overflow: ellipsis;
 }
 
-span
+span,strong,p
 {
   display: block;
 }

@@ -60,8 +60,10 @@ export default function MySlider({children,className,mySettings}:props)
         ]
       };
 
+     const realSettings ={...settings,...mySettings}
+
   return (
-    <Slider {...settings} {...mySettings} className={className} >
+    <Slider {...realSettings} >
       {
         children
       }

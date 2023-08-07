@@ -25,17 +25,15 @@ export default function HeroBanner(myProps: props)
   }=myProps
 
   const classNameTw = twMerge(
-    "flex items-start pt-[5rem] w-[1340px] max-w-[100%] mx-auto my-padding pb-[3rem] relative hero:pt-[3rem]",
+    "flex items-start pt-[5rem] custom-container2 pb-[3rem] relative hero:pt-[3rem]",
     className
   );
 
   const{container}=styles
 
-  console.log(container)
-
   return (
     <div
-      className={twMerge(`relative`,container)}
+      className={twMerge(`relative hero-top-margin`,container)}
       style={
         bgUrl !== false
           ? {
@@ -57,7 +55,7 @@ export default function HeroBanner(myProps: props)
         </div>
       )}
       <div
-        className="w-[1920px] relative max-w-[100%] mx-auto mt-[70.88px] 1362px:!bg-none"
+        className="w-[1920px] relative max-w-[100%] mx-auto 1362px:!bg-none"
         style={divStyle}
       >
         <article {...props} className={classNameTw}>
