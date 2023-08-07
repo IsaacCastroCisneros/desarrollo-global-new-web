@@ -31,7 +31,7 @@ export default function Hero()
         <Image
           width={2000}
           height={816}
-          className="min-w-[2000px] absolute left-[-9rem]"
+          className="absolute left-[0] bottom-0"
           alt="grupo de profesionales"
           src="/img/nosotrosBg.webp"
         />
