@@ -73,7 +73,7 @@ button
 
 .slick-list
 {
-  padding: .5rem 0;
+  padding: .5rem 0px !important;
 }
 
 h2

@@ -27,10 +27,10 @@ export default function Hero()
         }
       />
       <div className="flex-1 hero-response:hidden"></div>
-      <div className="w-[100%] max-w-[100%] overflow-hidden h-[816px] absolute left-[0rem] top-[-55.35px] 1736px:hidden">
+      <div className="w-[100%] max-w-[100%] overflow-hidden h-[815px] absolute left-[0rem] top-[-55.35px] 1736px:hidden">
         <Image
-          width={2000}
-          height={816}
+          width={1999}
+          height={815}
           className="absolute left-[0] bottom-0"
           alt="grupo de profesionales"
           src="/img/nosotrosBg.webp"

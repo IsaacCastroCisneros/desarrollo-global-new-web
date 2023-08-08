@@ -6,7 +6,7 @@ import { twMerge } from 'tailwind-merge'
 interface props extends LinkProps
 {
     children:ReactNode
-    className:string
+    className?:string
     target?:string
 }
 
