@@ -8,7 +8,7 @@ export default function Hero()
   return (
     <HeroBanner className="items-stretch py-[0]">
       <HeroLeftBox
-        className="hero:pt-0 bg-transparent pt-[8rem]"
+        className="hero:pt-0 bg-transparent pt-[169px]"
         upperTitle="nosotros"
         title="Descubre porque alcanzar tus objetivos profesionales con nosotros"
         subtitle={
