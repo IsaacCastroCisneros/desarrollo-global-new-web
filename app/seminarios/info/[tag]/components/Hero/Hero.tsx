@@ -17,7 +17,7 @@ export default function Hero()
           <h1 className="text-[65px] leading-[3rem] font-bold 1250px:text-[33px] 1250px:leading-[1.6rem]">
             SIGA MEF y el sistema Nacional de Abastecimiento
           </h1>
-          <div className="w-[5rem] h-[5px] ml-[1rem] bg-[#fff] mt-[1rem] mb-[.6rem] 1250px:hidden"></div>
+          <div className="w-[5rem] h-[5px] ml-[1rem] bg-[#fff] mt-[1rem] mb-[.6rem] self-start 1250px:hidden"></div>
           <p className="text-[16px] leading-[22px] 1250px:hidden">
             Si, quieres trabajar en el estado, prepárate y actualízate en
             desarrolloglobal mas de 10 años en programas para la mejora de
