@@ -2,10 +2,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { twMerge } from 'tailwind-merge';
 
 export default function Arrow(props:any)
 { 
-  const{onClick,side}=props
+  const{onClick,side,styles}=props
 
   function getIcon():IconProp
   {
@@ -17,10 +18,11 @@ export default function Arrow(props:any)
 
   return (
     <button
-      className={`absolute w-[2.5rem] h-[2.5rem] rounded-[100%] flex justify-center 500px:hidden items-center  text-primary bg-myGray2 translate-y-[-50%] top-[50%] ${position}`}
+      className={twMerge(
+        `absolute w-[2.5rem] h-[2.5rem] rounded-[100%] flex justify-center 500px:hidden items-center text-primary bg-myGray2 translate-y-[-50%] top-[50%] ${position}`,styles)}
       onClick={onClick}
     >
-      <FontAwesomeIcon size='lg' icon={getIcon()}/>
+      <FontAwesomeIcon size="lg" icon={getIcon()} />
     </button>
   );
 }

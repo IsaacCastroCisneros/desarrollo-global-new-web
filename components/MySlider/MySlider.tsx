@@ -7,10 +7,19 @@ interface props
   children:ReactNode
   className?:string
   mySettings?:Record<any,any>
+  arrowStyles?:string
 }
 
-export default function MySlider({children,className,mySettings}:props) 
+export default function MySlider(props:props) 
 {
+  const 
+  { 
+    children, 
+    className, 
+    mySettings, 
+    arrowStyles 
+  } = props;
+
     const settings = {
         dots: true,
         infinite: true,
@@ -29,8 +38,8 @@ export default function MySlider({children,className,mySettings}:props)
              </button>
            )
         },
-        nextArrow:<Arrow side="rite" />,
-        prevArrow:<Arrow side="left" />,
+        nextArrow:<Arrow side="rite" styles={arrowStyles}  />,
+        prevArrow:<Arrow side="left" styles={arrowStyles}  />,
         responsive:
         [
           {

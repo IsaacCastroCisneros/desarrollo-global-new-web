@@ -66,6 +66,7 @@ module.exports = {
         '840px':{'max':'840px'},
         '700px':{'max':'700px'},
         '500px':{'max':'500px'},
+        '375px':{'max':'375px'},
       }
     },
   },

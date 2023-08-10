@@ -5,10 +5,16 @@ import { faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Hero() {
   return (
-    <div className="bg-bg3 hero-top-margin h-[760px] 1300px:h-[initial]">
+    <div
+      className="bg-bg3 hero-top-margin h-[760px] 1300px:h-[initial]"
+      style={{
+        backgroundImage: "url(/img/Grupo-8872.webp)",
+        backgroundSize: "cover",
+      }}
+    >
       <article className="flex custom-container2 text-[#fff] py-[4.8rem] 1300px:py-[2rem] h-[100%] 1300px:text-center">
         <section className="flex-1 flex flex-col justify-between">
-          <div className='pt-[3.3rem] 1300px:pt-0 1300px:mb-[3rem]'>
+          <div className="pt-[3.3rem] 1300px:pt-0 1300px:mb-[3rem]">
             <h1 className="text-[60px] font-bold leading-[2.8rem]">
               Participa en nuestras Clases Gratuitas
             </h1>
