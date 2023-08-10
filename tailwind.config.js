@@ -39,6 +39,7 @@ module.exports = {
         myBlue4:"#2646B1",
         myBlue5:"#0074FF",
         myBlue5:"#3F8DFD",
+        myBlue6:"#092AAE",
         myYellow:"#FFE001",
         myRed:"#AA0F03",
         myRed2:"#FFE711",

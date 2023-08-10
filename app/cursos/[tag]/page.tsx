@@ -7,6 +7,7 @@ import BlockProgram from '@/components/BlockProgram/BlockProgram'
 import PorQueElegirNuestro from '@/components/Program/components/PorQueElegirNuestro/PorQueElegirNuestro'
 import ProfesoreProgram from '@/components/Program/components/ProfesoreProgram'
 import ContentProgram from '@/components/Program/components/ContentProgram/ContentProgram'
+import NuestraProuesta from '@/components/Program/components/NuestraPropuesta/NuestraProuesta'
 
 export default async function page({params}:any) 
 {
@@ -24,6 +25,7 @@ export default async function page({params}:any)
          <PorQueElegirNuestro/>
          <ContentProgram/>
          <ProfesoreProgram/>
+         <NuestraProuesta/>
       </BlockProgram>
     </Context>
   )
