@@ -47,7 +47,6 @@ export default function MySlider(props:props)
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
-              centerMode:true
             }
           },
           {
@@ -55,7 +54,6 @@ export default function MySlider(props:props)
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
-              centerMode:false
             }
           },
           {
@@ -63,7 +61,6 @@ export default function MySlider(props:props)
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              centerMode:false
             }
           },
         ]

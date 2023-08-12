@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Box() {
   return (
-    <div className="mx-[1rem] bg-[#fff] px-[3rem] 800px:mx-[.8rem] 800px:px-[1rem] flex flex-col justify-between h-[440px] my-shadow2 rounded-[.5rem] py-[1.5rem]">
+    <div className="mx-[1rem] bg-[#fff] px-[1.5rem] 800px:mx-[.8rem] 800px:px-[1rem] flex flex-col justify-between h-[440px] my-shadow2 rounded-[.5rem] py-[1.5rem]">
       <div className='mb-[1rem]'>
         <Image
           width={120}

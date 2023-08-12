@@ -29,12 +29,13 @@ button
 }
 .custom-container2
 {
-  width: 1432px;
+  width: 1320px;
 }
 .custom-container,.custom-container2
 {
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-top-margin

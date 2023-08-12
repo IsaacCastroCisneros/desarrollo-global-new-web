@@ -36,12 +36,17 @@ export default function ListaDeProximos()
     <Block
       title="Lista de Próximos inicios"
       withSlick
-      styles={{section:'1500px:px-0'}} 
+      styles={{ section: "1500px:px-0" }}
       subtitle={`"¡Mantente al tanto de nuestros próximos inicios y no te pierdas la oportunidad de formarte con los mejores!"`}
     >
       <MenuBar handleGetProgramas={handleGetProgramas} />
       <div className="1500px:hidden">
-        <MySlider>
+        <MySlider
+          mySettings={{
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }}
+        >
           <Card />
           <Card />
           <Card />

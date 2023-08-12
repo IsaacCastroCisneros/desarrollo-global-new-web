@@ -32,7 +32,7 @@ export default function Input(myProps:props)
   const classNameTw=twMerge(formField,`${className} ${icon ? "pl-[2.5rem]":""}`)
 
   return (
-    <div className="relative">
+    <div className="relative flex-1">
       {icon && (
         <div className='flex h-[100%] items-center absolute left-[.8rem] top-0 text-[.8rem] text-myGray7'>
           <FontAwesomeIcon icon={icon} />

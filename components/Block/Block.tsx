@@ -23,7 +23,7 @@ export default function Block(props:props)
     styles={div:"",section:"",article:"",p:"",h2:""}
   }=props
 
-  const isSlick=  withSlick ? ' w-[79rem] px-[3rem] 500px:px-0':''
+  const isSlick=  withSlick ? '!px-[4rem] 500px:px-0':''
   const
   {
     div,
@@ -56,7 +56,7 @@ export default function Block(props:props)
         )}
         <section
           className={twMerge(
-            "mx-auto max-w-[100%] w-[64rem] mt-[3rem] 700px:mt-[1.8rem]",
+            "mx-auto max-w-[100%] custom-container2 mt-[3rem] 700px:mt-[1.8rem]",
             section + isSlick
           )}
         >

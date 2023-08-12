@@ -8,14 +8,14 @@ export default function Hero()
   return (
     <HeroBanner className="items-stretch py-[0]">
       <HeroLeftBox
-        className="hero:pt-0 bg-transparent pt-[169px]"
+        className="hero:pt-0 bg-transparent pt-[calc(44px_+_81px)]"
         upperTitle="nosotros"
         title="Descubre porque alcanzar tus objetivos profesionales con nosotros"
         subtitle={
           <>
             <Image
               src="/img/nosotroslogo.webp"
-              className="mb-[1rem] relative hero-response:mx-auto"
+              className="mb-[.4rem] relative hero-response:mx-auto"
               width={748}
               height={134}
               alt="logo desarrollo y certificacion iso"
@@ -27,7 +27,7 @@ export default function Hero()
         }
       />
       <div className="flex-1 hero-response:hidden"></div>
-      <div className="w-[100%] max-w-[100%] overflow-hidden h-[815px] absolute left-[0rem] top-[-55.35px] 1736px:hidden">
+      <div className="w-[100%] max-w-[100%] overflow-hidden h-[647px] absolute left-[0rem] top-[0] 1736px:hidden">
         <Image
           width={1999}
           height={815}

@@ -30,7 +30,7 @@ export default function BlockNosotros(props:props)
           backgroundSize: "auto",
         }}
       >
-        <article className="block-container flex 1450px:flex-col 700px:text-center">
+        <article className="custom-container2 flex 1450px:flex-col 700px:text-center">
           <section className={twMerge("flex-[2] pt-[5.5rem] pb-[6.5rem] 700px:py-[2rem] bg-transparent bg-gradient-to-r from-white from-[64%] to-100%",styles.leftContent)} >
             {leftContent}
           </section>

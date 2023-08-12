@@ -9,9 +9,8 @@ export default function Hero()
     <HeroBanner
       className="pb-0 hero:pb-[2rem] items-stretch"
       bgUrl="/img/indexBG.webp"
-      isLayer={false}
     >
-      <section className="flex-1 hero:text-center pt-[3.3rem] hero:pt-0">
+      <section className="flex-1 hero:text-center flex flex-col justify-center hero:pt-0">
         <h1 className="text-primary font-bold text-[60px] leading-[2.7rem] mb-[1rem] hero:text-[33px] hero:leading-[2rem] hero:text-center">
           <span className="hero:flex hero:justify-center  flex">
             <span>Obtén la</span>&nbsp;<span className="text-myGreen">Certificación</span>
@@ -28,12 +27,12 @@ export default function Hero()
           <HeroLink href="/inHouse">InHouse</HeroLink>
         </div>
       </section>
-      <section className="flex-1 hero:hidden flex items-end">
+      <section className="hero:hidden flex items-end">
         <Image
           src="/img/heroLeftImg.webp"
-          width={744}
-          className="mx-auto min-w-[744px] h-[663px]"
-          height={663}
+          width={594}
+          className="mx-auto w-[100%]"
+          height={513}
           alt="hombre sosteniendo laptop"
         />
       </section>

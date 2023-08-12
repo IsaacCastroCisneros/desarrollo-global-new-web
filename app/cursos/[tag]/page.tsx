@@ -8,6 +8,8 @@ import PorQueElegirNuestro from '@/components/Program/components/PorQueElegirNue
 import ProfesoreProgram from '@/components/Program/components/ProfesoreProgram'
 import ContentProgram from '@/components/Program/components/ContentProgram/ContentProgram'
 import NuestraProuesta from '@/components/Program/components/NuestraPropuesta/NuestraProuesta'
+import CertificacionProgram from '@/components/Program/components/CertificacionProgram'
+import InversionFormas from '@/components/Program/components/InversionFormas/InversionFormas'
 
 export default async function page({params}:any) 
 {
@@ -26,6 +28,8 @@ export default async function page({params}:any)
          <ContentProgram/>
          <ProfesoreProgram/>
          <NuestraProuesta/>
+         <CertificacionProgram/>
+         <InversionFormas/>
       </BlockProgram>
     </Context>
   )
